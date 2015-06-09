@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/textPartA" android:layout_marginLeft="20dp"
+            android:textSize="30dp"
+            android:textStyle="bold" android:layout_alignParentTop="false" android:layout_alignParentLeft="false"
+            android:layout_marginTop="20dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="x"
+            android:id="@+id/textOperator" android:layout_gravity="right"
+            android:textSize="50dp" android:textStyle="bold"
+            android:layout_alignParentTop="false" android:layout_toRightOf="@+id/textPartA"
+            android:layout_marginLeft="100dp" android:layout_alignBottom="@+id/textPartA"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1"
+            android:id="@+id/textPartB" android:layout_gravity="center_horizontal"
+            android:textSize="30dp" android:textStyle="bold"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="false"
+            android:layout_marginLeft="100dp" android:layout_toRightOf="@+id/textOperator"
+            android:layout_alignBottom="@+id/textOperator"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="="
+            android:id="@+id/textEqual" android:layout_gravity="center_horizontal"
+            android:layout_marginTop="39dp"
+            android:textSize="50dp" android:textStyle="bold" android:textIsSelectable="true"
+            android:layout_below="@+id/textOperator" android:layout_alignLeft="@+id/textOperator"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/buttonChoice1"
+            android:layout_marginTop="150dp" android:textSize="30dp"
+            android:textStyle="bold" android:layout_alignParentLeft="true" android:layout_below="@+id/textPartA"
+            android:layout_marginLeft="20dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/buttonChoice2"
+            android:textSize="30dp" android:textStyle="bold"
+            android:layout_alignTop="@+id/buttonChoice1" android:layout_toRightOf="@+id/buttonChoice1"
+            android:layout_marginLeft="30dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/buttonChoice3"
+            android:textSize="30dp" android:textStyle="bold" android:layout_alignTop="@+id/buttonChoice2"
+            android:layout_toRightOf="@+id/buttonChoice2" android:layout_marginLeft="30dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Score : 0"
+                android:id="@+id/textScore"
+                android:layout_marginBottom="50dp" android:layout_alignParentBottom="true"
+                android:singleLine="true" android:layout_marginLeft="30dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Level : 1"
+                android:id="@+id/textLevel"
+                android:layout_toRightOf="@+id/textScore" android:layout_alignTop="@+id/textScore"
+                android:layout_marginLeft="50dp"/>
+</RelativeLayout>

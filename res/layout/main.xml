@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="My Math Game"
+            android:id="@+id/textView"
+            android:textSize="30sp"
+            android:layout_marginTop="34sp" android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/ic_launcher"
+            android:contentDescription="Math Robet" android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:id="@+id/buttonPlay"
+            android:layout_marginTop="35dp" android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"/>
+    <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="High Scores"
+            android:id="@+id/buttonHighScroes"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/buttonPlay" android:layout_marginTop="20dp"/>
+    <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Quit"
+            android:id="@+id/buttonQuit" android:layout_centerHorizontal="true"
+            android:layout_below="@+id/buttonHighScroes"
+            android:layout_marginTop="20dp"/>
+</RelativeLayout>
+
